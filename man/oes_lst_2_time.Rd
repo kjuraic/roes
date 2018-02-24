@@ -19,5 +19,5 @@ Extract time scale from OES data list
      \dontrun{oes_lst_2_time(oes_lst)}
 }
 \author{
-K. Juraic
+Juraic
 }

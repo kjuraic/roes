@@ -116,7 +116,7 @@ oes_lst_2_mat <- function(oes_lst, plot = TRUE){
 
 
 #' OES time scale from list
-#' @author K. Juraic
+#' @author  Juraic
 #' @description Extract time scale from OES data list
 #' @param oes_lst List with OES data
 #' @return OES time scale in array
@@ -155,6 +155,10 @@ oes_peak_area <- function(oes_mat, x.min, x.max, sub_min = TRUE){
 #'
 #' @param oes_lst oes list
 plot_oes_section <- function(oes_lst) {
+  x.min <- 0
+  x.max <- 0
+  wavelength_id <- 1
+  wavelength_id_2 <- 1
   oes_mat <- oes_lst_2_mat(oes_lst)
   wavelength <- oes_lst[[1]]$data[,1]
   manipulate(

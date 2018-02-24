@@ -14,4 +14,8 @@ RoxygenNote: 6.0.1
 Imports:
   tcltk,
   plyr,
-  manipulate
+  manipulate,
+  ggplot2,
+  stringi,
+  stringr,
+  readr
