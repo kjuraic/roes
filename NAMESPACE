@@ -1,0 +1,8 @@
+
+importFrom("utils", "read.table")
+importFrom("tcltk", "tk_choose.dir", "tk_choose.files")
+importFrom("plyr", "alply")
+importFrom("grDevices", "rainbow")
+importFrom("manipulate", "manipulate")
+importFrom("graphics", "abline", "frame", "par", "plot", "points", "image")
+

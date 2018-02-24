@@ -1,0 +1,17 @@
+Package: roes
+Type: Package
+Title: Analysis of Optical Emission Spectroscopy results
+Version: 0.1.0
+Author: K. Juraic
+Maintainer: Krunoslav Juraic <krunoslav.juraic@irb.hr>
+Description: Analysis of sequence of OES spectra
+    Read Ocean Optics HR400 files
+    Read sequence of files
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports:
+  tcltk,
+  plyr,
+  manipulate
