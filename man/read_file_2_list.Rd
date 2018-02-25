@@ -27,7 +27,7 @@ Read data from multiple files to list by using specified function.
              dialog.
 }
 \examples{
-        \dontrun{dat = read_file_2_list()}
+\dontrun{dat = read_file_2_list()}
 }
 \author{
 K. Juraic

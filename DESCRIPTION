@@ -4,9 +4,10 @@ Title: Analysis of Optical Emission Spectroscopy results
 Version: 0.1.0
 Author: K. Juraic
 Maintainer: Krunoslav Juraic <krunoslav.juraic@irb.hr>
-Description: Analysis of sequence of OES spectra
-    Read Ocean Optics HR400 files
-    Read sequence of files
+Description: Analysis of sequence of OES spectra.
+    Read Ocean Optics HR4000 files.
+    Read sequence of Ocena files.
+    Read NIST Emission lines and visula compare experimental data with NIST databes  
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -18,4 +19,5 @@ Imports:
   ggplot2,
   stringi,
   stringr,
-  readr
+  readr,
+  grDevices

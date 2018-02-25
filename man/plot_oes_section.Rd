@@ -12,3 +12,6 @@ plot_oes_section(oes_lst)
 \description{
 plot oes data section
 }
+\author{
+K. Juraic
+}
