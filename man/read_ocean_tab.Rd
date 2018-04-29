@@ -4,13 +4,13 @@
 \alias{read_ocean_tab}
 \title{Read Ocean optics spectra from file}
 \usage{
-read_ocean_tab(fileName)
+read_ocean_tab(file_name)
 }
 \arguments{
-\item{fileName}{File name for stored ocean optics spectra}
+\item{file_name}{File name for stored ocean optics spectra}
 }
 \value{
-list(name, data, scanTime, intTime, spectraAvg, boxcar, nPixels)
+list(name, data, scan_time, int_time, spectra_avg, boxcar, n_pixels)
 }
 \description{
 Read ocean optics spectra from tab delimited file with header

@@ -7,7 +7,8 @@ Maintainer: Krunoslav Juraic <krunoslav.juraic@irb.hr>
 Description: Analysis of sequence of OES spectra.
     Read Ocean Optics HR4000 files.
     Read sequence of Ocena files.
-    Read NIST Emission lines and visula compare experimental data with NIST databes  
+    Read NIST Emission lines and visula compare experimental data with NIST 
+    databes. 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -21,3 +22,5 @@ Imports:
   stringr,
   readr,
   grDevices
+Depends:
+  R (>= 2.10)

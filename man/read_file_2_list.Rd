@@ -5,17 +5,17 @@
 \title{Read data from multiple files to list}
 \usage{
 read_file_2_list(oes_folder = tcltk::tk_choose.dir(caption =
-  "Select OES folder:"), read_function = read_ocean_tab, allFiles = FALSE,
-  filePattern = "*.*")
+  "Select OES folder:"), read_function = read_ocean_tab, all_files = FALSE,
+  file_pattern = "*.*")
 }
 \arguments{
 \item{oes_folder}{Folder path from where to read}
 
 \item{read_function}{Functio tpo be used for single file read}
 
-\item{allFiles}{TRUE all files satisfieing filePattern in folder will be read}
+\item{all_files}{TRUE all files satisfieing filePattern in folder will be read}
 
-\item{filePattern}{File pattern}
+\item{file_pattern}{File pattern}
 }
 \value{
 list of read data
