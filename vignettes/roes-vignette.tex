@@ -1,0 +1,191 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={roes - Optical Emission Spectroscopy Data Analysis},
+            pdfauthor={Krunoslav Juraic},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{roes - Optical Emission Spectroscopy Data Analysis}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{Krunoslav Juraic}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \predate{\centering\large\emph}
+  \postdate{\par}
+  \date{2018-04-30}
+
+
+\begin{document}
+\maketitle
+
+Roes vignette gives one example of Optical Emission Spectroscopy data
+analysis. Analysis can be devided in 3 steps:
+
+\begin{itemize}
+\tightlist
+\item
+  OES data import
+\item
+  OES data cleaning
+\item
+  OES data comparison with NIST database (spectral lines recognition)
+\end{itemize}
+
+Package can be installed directly from github:
+
+Before use package should be loaded:
+
+\begin{verbatim}
+library(roes)
+\end{verbatim}
+
+\subsection{Data import}\label{data-import}
+
+In this example we are using Ocean Optics HR4000 spectrometer and data
+saved in ASCII files by Oean Optics Spectra Suite spectrometer. There
+are two Ocean Optics ASCII data files: with header or without header.
+
+\subsection{Data cleaning}\label{data-cleaning}
+
+\subsection{NIST spectral lines
+database}\label{nist-spectral-lines-database}
+
+\subsection{Figures}\label{figures}
+
+The figure sizes have been customised so that you can easily put two
+images side-by-side.
+
+\begin{verbatim}
+plot(1:10)
+plot(10:1)
+\end{verbatim}
+
+\includegraphics{roes-vignette_files/figure-latex/unnamed-chunk-3-1.pdf}
+\includegraphics{roes-vignette_files/figure-latex/unnamed-chunk-3-2.pdf}
+
+You can enable figure captions by \texttt{fig\_caption:\ yes} in YAML:
+
+\begin{verbatim}
+output:
+  rmarkdown::html_vignette:
+    fig_caption: yes
+\end{verbatim}
+
+Then you can use the chunk option
+\texttt{fig.cap\ =\ "Your\ figure\ caption."} in \textbf{knitr}.
+
+\subsection{More Examples}\label{more-examples}
+
+You can write math expressions, e.g. \(Y = X\beta + \epsilon\),
+footnotes\footnote{A footnote here.}, and tables, e.g.~using
+\texttt{knitr::kable()}.
+
+\begin{longtable}[]{@{}lrrrrrrrrrrr@{}}
+\toprule
+& mpg & cyl & disp & hp & drat & wt & qsec & vs & am & gear &
+carb\tabularnewline
+\midrule
+\endhead
+Mazda RX4 & 21.0 & 6 & 160.0 & 110 & 3.90 & 2.620 & 16.46 & 0 & 1 & 4 &
+4\tabularnewline
+Mazda RX4 Wag & 21.0 & 6 & 160.0 & 110 & 3.90 & 2.875 & 17.02 & 0 & 1 &
+4 & 4\tabularnewline
+Datsun 710 & 22.8 & 4 & 108.0 & 93 & 3.85 & 2.320 & 18.61 & 1 & 1 & 4 &
+1\tabularnewline
+Hornet 4 Drive & 21.4 & 6 & 258.0 & 110 & 3.08 & 3.215 & 19.44 & 1 & 0 &
+3 & 1\tabularnewline
+Hornet Sportabout & 18.7 & 8 & 360.0 & 175 & 3.15 & 3.440 & 17.02 & 0 &
+0 & 3 & 2\tabularnewline
+Valiant & 18.1 & 6 & 225.0 & 105 & 2.76 & 3.460 & 20.22 & 1 & 0 & 3 &
+1\tabularnewline
+Duster 360 & 14.3 & 8 & 360.0 & 245 & 3.21 & 3.570 & 15.84 & 0 & 0 & 3 &
+4\tabularnewline
+Merc 240D & 24.4 & 4 & 146.7 & 62 & 3.69 & 3.190 & 20.00 & 1 & 0 & 4 &
+2\tabularnewline
+Merc 230 & 22.8 & 4 & 140.8 & 95 & 3.92 & 3.150 & 22.90 & 1 & 0 & 4 &
+2\tabularnewline
+Merc 280 & 19.2 & 6 & 167.6 & 123 & 3.92 & 3.440 & 18.30 & 1 & 0 & 4 &
+4\tabularnewline
+\bottomrule
+\end{longtable}
+
+Also a quote using \texttt{\textgreater{}}:
+
+\begin{quote}
+``He who gives up {[}code{]} safety for {[}code{]} speed deserves
+neither.''
+(\href{https://twitter.com/hadleywickham/status/504368538874703872}{via})
+\end{quote}
+
+
+\end{document}

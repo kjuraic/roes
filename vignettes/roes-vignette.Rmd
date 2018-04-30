@@ -1,0 +1,86 @@
+---
+title: "roes - Optical Emission Spectroscopy Data Analysis"
+author: "Krunoslav Juraic"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+  pdf_document:
+    highlight: null
+    number_sections: yes
+vignette: >
+  %\VignetteIndexEntry{Optical Emission Spectroscopy Data Analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+<!---
+% rebuild wignete
+% rmarkdown::render("vignettes/roes-vignette.Rmd", "all")
+% devtools::build_vignette()
+% devtools::install()
+-->
+
+Roes vignette gives one example of Optical Emission Spectroscopy data analysis. Analysis can be devided in 3 steps:
+
+- OES data import
+- OES data cleaning
+- OES data comparison with NIST database (spectral lines recognition)
+
+Package can be installed directly from github:
+```{r}
+
+```
+
+
+Before use package should be loaded:
+```{r}
+library(roes)
+```
+
+
+## Data import
+In this example we are using Ocean Optics HR4000 spectrometer and data saved in ASCII files by Oean Optics Spectra Suite spectrometer. There are two Ocean Optics ASCII data files: with header or without header.
+
+## Data cleaning
+
+
+## NIST spectral lines database
+
+
+
+## Figures
+
+The figure sizes have been customised so that you can easily put two images side-by-side. 
+
+```{r, fig.show='hold'}
+plot(1:10)
+plot(10:1)
+```
+
+You can enable figure captions by `fig_caption: yes` in YAML:
+
+    output:
+      rmarkdown::html_vignette:
+        fig_caption: yes
+
+Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
+
+## More Examples
+
+You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
+
+```{r, echo=FALSE, results='asis'}
+knitr::kable(head(mtcars, 10))
+```
+
+Also a quote using `>`:
+
+> "He who gives up [code] safety for [code] speed deserves neither."
+([via](https://twitter.com/hadleywickham/status/504368538874703872))
