@@ -3,7 +3,6 @@
 \docType{package}
 \name{roes}
 \alias{roes}
-\alias{roes-package}
 \title{roes: A package for optical emission spectroscopy (OES) data analysis.}
 \description{
 The roes package provides three categories of important functions:

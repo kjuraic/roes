@@ -4,9 +4,12 @@
 \alias{read_file_2_list}
 \title{Read data from multiple files to list}
 \usage{
-read_file_2_list(oes_folder = tcltk::tk_choose.dir(caption =
-  "Select OES folder:"), read_function = read_ocean_tab, all_files = FALSE,
-  file_pattern = "*.*")
+read_file_2_list(
+  oes_folder = tcltk::tk_choose.dir(caption = "Select OES folder:"),
+  read_function = read_ocean_tab,
+  all_files = FALSE,
+  file_pattern = "*.*"
+)
 }
 \arguments{
 \item{oes_folder}{Folder path from where to read}
