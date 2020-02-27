@@ -18,9 +18,6 @@ Imports:
   plyr,
   manipulate,
   ggplot2,
-  stringi,
-  stringr,
-  readr,
   grDevices,
   shiny
 Depends:
